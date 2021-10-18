@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #181818;
+  color: white;
+}
+
+main {
+  color: #1f2f56;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 98vh;
+}
+
+.container {
+  border-radius: 25px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  width: 425px;
+}
+
+.container h1 {
+  margin: 0px;
+  margin-top: 35px;
+  font-weight: 900;
+}
+
+.primary-text {
+  width: 285px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container-image {
+  background-image: url("../images/illustration-hero.svg");
+  height: 215px;
+  width: 425px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.plan-card {
+  width: 350px;
+  height: 100px;
+  background-color: #f6f7fe;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.plan-card-icon {
+  background-image: url("../images/icon-music.svg");
+  margin-left: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 48px;
+  height: 48px;
+}
+
+.plan-card-info {
+  margin-left: 25px;
+}
+
+.plan-card-plan {
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.plan-card-price {
+  margin-top: 0px;
+  font-weight: 400;
+  color: #7280a7;
+}
+
+.plan-card-button {
+  font-weight: 700;
+  color: #3829e0;
+  text-decoration: underline;
+  margin-left: 85px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.proceed-button {
+  background-color: #3829e0;
+  color: #ffffff;
+  font-weight: 700;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 12px 28px -10px #7280a7;
+          box-shadow: 0 12px 28px -10px #7280a7;
+  width: 350px;
+  height: 50px;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.cancel-button {
+  margin-top: 30px;
+  margin-bottom: 35px;
+  font-weight: 700;
+  color: #7280a7;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+@media (hover: hover) {
+  .cancel-button:hover {
+    cursor: pointer;
+    color: #1f2f56;
+  }
+  .plan-card-button:hover {
+    color: #7280a7;
+    text-decoration: none;
+  }
+  .proceed-button:hover {
+    cursor: pointer;
+    background-color: #7280a7;
+  }
+}
+/*# sourceMappingURL=style.css.map */
