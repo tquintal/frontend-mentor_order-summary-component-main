@@ -1,17 +1,23 @@
 @import './variables'
 
-body 
-    margin: 0
-    font-family: $redHatDisplay
-    background-color: #181818
-    color: white
+*
+    padding: 0
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
 
-main
-    color: $neutralDarkBlue
+body
+    background-image: url('../images/pattern-background-desktop.svg')
+    background-repeat: no-repeat
+    background-color: #E0E8FF
+    background-size: contain
     display: flex
-    align-items: center
     justify-content: center
-    height: 98vh
+    align-items: center
+    flex-direction: column
+    min-height: 100vh
+    font-size: $paragraphSize
+    font-family: $redHatDisplay, sans-serif
+    margin: 0
 
 .container
     border-radius: 25px
@@ -52,8 +58,6 @@ main
 .plan-card-icon 
     background-image: url('../images/icon-music.svg')
     margin-left: 25px
-    width: fit-content
-    height: fit-content
     width: 48px
     height: 48px
 
@@ -92,17 +96,6 @@ main
     font-weight: 700
     color: $neutralDesaturatedBlue
 
-button,
-input[type="submit"],
-input[type="reset"] 
-  background: none
-  color: inherit
-  border: none
-  padding: 0
-  font: inherit
-  cursor: pointer
-  outline: inherit
-
 @media (hover: hover)
     .cancel-button:hover
         cursor: pointer
@@ -115,3 +108,45 @@ input[type="reset"]
     .proceed-button:hover
         cursor: pointer
         background-color: $neutralDesaturatedBlue
+
+.attribution
+    position: absolute
+    bottom: 0
+    margin: 15px
+    font-size: 12px
+    
+@media only screen and (max-width: 500px)
+    .container
+        height: 100vh
+        border-radius: 0
+        border-top-left-radius: 0
+        border-top-right-radius: 0
+        width: 100%
+
+    .container-image    
+        width: 100%
+        border-top-left-radius: 0
+        border-top-right-radius: 0
+
+    .plan-card
+        width: 300px
+
+    .plan-card-button 
+        margin-left: 28px
+
+    .proceed-button
+        width: 300px
+
+    .cancel-button
+        margin-top: 18px
+
+button,
+input[type="submit"],
+input[type="reset"] 
+  background: none
+  color: inherit
+  border: none
+  padding: 0
+  font: inherit
+  cursor: pointer
+  outline: inherit
